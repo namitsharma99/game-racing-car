@@ -19,6 +19,8 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 <script type="text/javascript">
 	$(document).keydown(function(event) {
+		
+	
 		switch (event.keyCode) {
 		case 27:
 			resetCar();
@@ -41,22 +43,26 @@
 	function moveLeft() {
 		var element = document.getElementById("car");
 		element.style.left = parseInt(element.style.left) - 2 + '%';
+		$("#car0").stop().animate({ top: "-=10px" }, 2000 );
 	}
 
 	function moveRight() {
 		var element = document.getElementById("car");
 		element.style.left = parseInt(element.style.left) + 2 + '%';
-
+		$("#car0").stop().animate({ top: "-=10px" }, 2000 );
 	}
 
 	function moveUp() {
 		var element = document.getElementById("car");
 		element.style.top = parseInt(element.style.top) - 2 + '%';
+		/*attempt to move other car*/			
+		$("#car0").stop().animate({ top: "+=10px" }, 2000 );
 	}
 
 	function moveDown() {
 		var element = document.getElementById("car");
 		element.style.top = parseInt(element.style.top) + 2 + '%';
+		$("#car0").stop().animate({ top: "-=10px" }, 2000 );
 	} 
 	
 
@@ -94,7 +100,9 @@
 	<div class="container">
 		<textarea class="bg">
 		</textarea>
-		<img id="car" src="police_car.png"  style="position:absolute;left:48%; top:50%;" height="70" width="50">
+		<img id="car" src="police_car.png"  style="position:absolute;left:48%; top:400%;" height="70" width="50">
+		<!-- adding another car -->
+		<img id="car0" src="car.png"  style="position:absolute; left:30%; top:0" height="60" width="30">
 	</div>
 	
 </body>
