@@ -6,6 +6,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>e_CaR-RaC_e</title>
 <link rel="stylesheet" href="./myStyle.css" />
+<link rel="icon" href="car.png" type="image/png">
+
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script type="text/javascript">
