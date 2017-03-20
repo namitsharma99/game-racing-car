@@ -94,7 +94,7 @@
 	<div class="container">
 		<textarea class="bg">
 		</textarea>
-		<img id="car" src="car.png"  style="position:absolute;left:48%; top:50%;" height="50" width="25">
+		<img id="car" src="police_car.png"  style="position:absolute;left:48%; top:50%;" height="70" width="50">
 	</div>
 	
 </body>
