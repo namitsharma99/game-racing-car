@@ -1,0 +1,25 @@
+@CHARSET "UTF-8";
+
+    .container {
+    	padding-left: 0px;
+    	position: absolute;
+    	width: 168px; 
+    	height: 130px;
+    	
+    }
+    .bg {
+      width: 80%;
+      height: 600px;
+      background: url("background.png") repeat-y;
+      background-size: 100%;
+      -webkit-animation: displace 0.5s linear infinite;
+      animation: displace 0.5s linear infinite;
+    }
+     @-webkit-keyframes displace {
+      from { background-position: top;
+      } to { background-position: bottom; }
+    }
+    @keyframes displace {
+      from { background-position: top;
+      } to { background-position: bottom; } 
+    }
